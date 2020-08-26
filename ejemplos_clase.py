@@ -75,6 +75,7 @@ def show(fetch_all=True):
         print(json_string)
 
     # Leer todos los documentos y obtener los datos de a uno
+    cursor = db.persons.find()
     for doc in cursor:
         print(doc)
 
